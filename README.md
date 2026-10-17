@@ -4,7 +4,7 @@
 
 > MacRefresh is an original, community project. It is **not** affiliated with, endorsed by, or related to any other update utility, and it ships no third-party code or branding. It is released under the MIT license.
 
-![MacRefresh](MacRefresh.dmg)
+![MacRefresh](icon.png)
 
 ---
 
