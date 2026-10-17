@@ -26,7 +26,7 @@
 
 ### Prebuilt release (recommended)
 
-1. Open `MacRefresh.dmg`.
+1. Open the Release and download `MacRefresh.dmg`.
 2. Drag **MacRefresh** onto the **Applications** folder.
 3. Launch it. The first time you update or remove an app macOS may ask for permission; that is the standard App Management / admin prompt.
 
