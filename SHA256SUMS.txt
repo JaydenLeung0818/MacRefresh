@@ -1,0 +1,2 @@
+21e62a54efdcd7619ccee6f93ccf9e54aa10b424d1d0967ceb03c422232345e2  MacRefresh.dmg
+b0699610ac29941701d676e0c3f404c3d45ec157a60cefa0da086e7bccc69635  MacRefresh-src.zip
