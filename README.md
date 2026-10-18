@@ -217,4 +217,4 @@ MacRefresh does not collect or send any personal data. It only contacts the publ
 
 ## License
 
-[MIT](LICENSE) — Copyright © 2026 MacRefresh contributors. All app and company names mentioned are the property of their respective owners and are used only to identify those apps.
+[MIT](LICENSE) — Copyright © Jayden Leung. All app and company names mentioned are the property of their respective owners and are used only to identify those apps.
