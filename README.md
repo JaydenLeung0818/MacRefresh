@@ -42,6 +42,8 @@
 
 ## What's new in 1.0.1 (beta)
 
+Note: 1.0.1 might contains errors.
+
 - **In-app self-update.** MacRefresh checks its own GitHub releases and can download, verify, stage and install a new build, then restart itself — with an automatic backup you can restore from. Choose **MacRefresh → Check for MacRefresh Updates…**, or open **Tools → Security & updates**.
 - **Release-channel indicator.** The sidebar, title bar, About panel and menu show whether you are on an **Alpha**, **Beta** or **Release** build (e.g. `1.0.1b · Beta`). Pre-release builds only see pre-release updates; stable builds only see stable updates unless you opt in.
 - **Folder protection.** MacRefresh can lock its private data folder (`~/Library/Application Support/MacRefresh/`) to owner-only (700/600) so other users and processes cannot read or tamper with downloaded installers, logs or catalogs.
