@@ -8,51 +8,6 @@
 
 ---
 
-## What's new in 1.0.2 beta 2
-
-- **Fixed: self-update now finds beta releases.** Tags like `MacRefresh_v1.0.2b` are parsed correctly (the prerelease suffix is preserved), so the updater no longer silently skips a release because its version looked "stable" while GitHub flagged it as pre-release.
-- **Fixed: no more false "binary changed" alerts after updating.** The SHA-256 tamper check is now version-aware — a version bump records the new hash and moves on; only a same-version hash mismatch is flagged.
-- **Fixed: broken "X" entries filtered from Updates.** Rows with an empty name, empty bundle ID, or a 1–2 character name with no version are dropped, and update rows must carry a plausible latest version.
-- **Fixed: search lag.** Typing in the search box is debounced (180 ms) so fast typing no longer triggers a full table reload per keystroke.
-- **Self-update hardening.** Downloads retry 3× with backoff, files under 500 KB are rejected (catches HTML error pages), and the staged bundle is verified to be `com.macrefresh.fixed` and not older than the running build.
-- **Window position memory.** The window frame (position + size) is saved on move/resize and restored on launch.
-- **Overview second row:** Last scan, Free disk space (red if <10 GB), Network status, Update channel.
-- **Overview quick actions:** Rescan apps, Find duplicates, Open Tools, Settings.
-- **⌘U shortcut** for Update All Outdated (alongside ⌘R check, ⌘⇧R rescan, ⌘1–7 panes, ⌘L search).
-- **Settings → Updates & install behavior:** check on launch, backup before update, open after install, rescan after install, verify checksums, install pending on quit, rollback retention (1/3/5/10).
-- **Settings → Accessibility:** larger text, high contrast, reduce transparency, keyboard shortcuts.
-- **Settings → Export/Import settings** (plist, with restart on import).
-- **Tools → Diagnostics & network:** View log in window, Network diagnostics (ping/DNS/GitHub), Login items, Disk space analyzer, Copy system profile.
-- **Last-scan timestamp** saved and displayed on the Overview.
-- **35 new preference keys** with safe defaults; **10 new self-tests** (233 total, all passing).
-
-## What's new in 1.0.2 (beta)
-
-- **Scrolling fixed.** The Tools and Settings panes no longer clip content below the window — every section is reachable.
-- **Cleaner channel badge.** The loud orange BETA pill is replaced with a soft, subtle amber tag (Release = green, Alpha = red, same soft treatment).
-- **Selectable update channels.** Choose **Stable**, **Beta** or **Alpha** in Tools → Security & updates; a stable user can opt into betas, and a beta user can lock to stable-only.
-- **Faster updates.** Fast mode (on by default) raises parallel update checks to 18 and download concurrency to 6–10.
-- **Stronger security (anti file-theft).** Optionally lock `~/Documents`, `~/Desktop` and `~/Downloads` to owner-only (700); scan them for world/group-writable items; detect a tampered MacRefresh binary via SHA-256 integrity hash checked at launch.
-- **Security score 0–100** shown on the Overview and Tools panes.
-- **New Settings:** Compact UI, Reduce Motion, default launch pane, auto-install minor/patch updates, show/hide security score, fast mode toggle.
-- **Overview "Update All Outdated"** button alongside Check for Updates.
-- **Context menu additions:** Skip this version, Copy path, Open homepage, Show in Shop.
-- **Reset all settings** (with confirm + restart) in Settings → Storage.
-- **12 new self-tests** — 223 total, all passing.
-
-## What's new in 1.0.1 (beta)
-
-Note: 1.0.1 might contains errors.
-
-- **In-app self-update.** MacRefresh checks its own GitHub releases and can download, verify, stage and install a new build, then restart itself — with an automatic backup you can restore from. Choose **MacRefresh → Check for MacRefresh Updates…**, or open **Tools → Security & updates**.
-- **Release-channel indicator.** The sidebar, title bar, About panel and menu show whether you are on an **Alpha**, **Beta** or **Release** build (e.g. `1.0.1b · Beta`). Pre-release builds only see pre-release updates; stable builds only see stable updates unless you opt in.
-- **Folder protection.** MacRefresh can lock its private data folder (`~/Library/Application Support/MacRefresh/`) to owner-only (700/600) so other users and processes cannot read or tamper with downloaded installers, logs or catalogs.
-- **App-folder security scan.** Scan all installed apps for over-permissive permissions (world/group-writable bundles and executables), unsigned apps, and stray quarantine flags, with one-click repair.
-- **Self-integrity verification.** Verify that the installed MacRefresh bundle is intact with `codesign`.
-- The test suite now covers 211 checks (channel gating, self-update selection, the swapper script, permission lockdown and scan/repair).
-
----
-
 
 ## Highlights
 
